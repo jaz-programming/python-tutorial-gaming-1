@@ -24,4 +24,23 @@ def start():
 	scores()
 	
 def game():
-	print "The computer will help you throw your five dice."	
+	print "The computer will help you throw your five dice."
+	throws()
+	return play_again()
+	
+def throws():
+	roll_number = 5
+	dice = roll(roll_number)
+	dice.sort()
+	for i in range(len(dice)):
+		print "Dice ", i + 1, ": ", names[dice[i]]
+		
+	result = hand(dice)
+	print "You currently have", result
+	
+	while True:
+		rerolls = raw_input("How many dice do you want to throw again?")
+		try:
+			if rerolls in (1, 2, 3, 4, 5)
+	
+	
