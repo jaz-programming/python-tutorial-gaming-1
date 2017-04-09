@@ -41,6 +41,34 @@ def throws():
 	while True:
 		rerolls = raw_input("How many dice do you want to throw again?")
 		try:
-			if rerolls in (1, 2, 3, 4, 5)
+			if rerolls in (1, 2, 3, 4, 5):
+				break
+		except ValueError:
+			pass
+		print "That wasn't a valid answer. Please enter 1, 2, 3, 4 or 5."
+	if rerolls == 0:
+		print "You finish with ", result
+	else:
+		roll_number = rerolls
+		dice_rerolls = roll(roll_number)
+		dice_changes = range(rerolls)
+		print "Enter the number of a dice to reroll: "
+		
+		
+		iterations = 0
+		while iterations < rerolls:
+			iterations += 1
+			while True:
+				selection = raw_input("")
+				try:
+					if selection in (1, 2, 3, 4, 5):
+						break
+				except ValueError:
+					pass
+				print "That wasn't a valid answer. Please enter 1, 2, 3, 4 or 5."
+			dice_changes[iterations-1] = selection-1
+			print "You have changed dice ", selection
+			
+		
 	
 	
