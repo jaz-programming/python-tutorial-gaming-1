@@ -70,7 +70,7 @@ def start():
 
 def game():
 	dictionary = ["gnu", "kernel", "linux", "compile", "terminal", "ubuntu"]
-	word = choice(dictionary)
+	word = choice(dictionary) 
 	word_length = len(word)
 	clue = word_length * ["_"]
 	tries = 3
