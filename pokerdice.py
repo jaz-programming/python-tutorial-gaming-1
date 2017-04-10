@@ -69,6 +69,11 @@ def throws():
 			dice_changes[iterations-1] = selection-1
 			print "You have changed dice ", selection
 			
+		iterations = 0
+		while iterations < rerolls:
+			iterations += 1
+			replacement = dice
+			
 		
 	
 	
