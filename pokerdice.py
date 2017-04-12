@@ -72,7 +72,7 @@ def throws():
 		iterations = 0
 		while iterations < rerolls:
 			iterations += 1
-			replacement = dice
+			replacement = dice 
 			
 		
 	
